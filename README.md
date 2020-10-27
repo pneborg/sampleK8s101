@@ -1,1 +1,3 @@
-# sampleK8s101
+# Deploying a Containerized Application Using Amazon EKS
+Sample globomantics application
+Example Kubernetes yaml templates
