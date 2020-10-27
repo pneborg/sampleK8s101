@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: globomantics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui
+      rel: beta
+  template:
+    metadata:
+      labels:
+        app: ui
+        rel: beta
+    spec:
+      containers:
+        - name: globomantics
+          image: 493215491729.dkr.ecr.us-east-1.amazonaws.com/sample101k8s:lastest
